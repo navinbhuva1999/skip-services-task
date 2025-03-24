@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# WeWantWaste Skip Selection Page Redesign
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a redesign of the skip selection page for WeWantWaste.co.uk, focusing on improved UI/UX, responsiveness, and maintainable React code.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+You can view the live demo at 
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The goal of this project was to redesign the skip selection page while maintaining its core functionality. The redesign focuses on:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Modern UI/UX**: Clean, intuitive interface with clear visual hierarchies
+- **Responsive Design**: Fully responsive for mobile, tablet, and desktop views
+- **Maintainable Code**: Well-structured TypeScript React components with proper separation of concerns
+- **Material-UI**: Leveraging Material-UI (MUI) for consistent design patterns and components
 
-### `npm test`
+## Implementation Approach
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Architecture
 
-### `npm run build`
+The project follows a component-based architecture with:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **TypeScript**: For type safety and better developer experience
+- **React**: For building the UI components
+- **Material UI**: For design system and component library
+- **Responsive Design**: Mobile-first approach with responsive breakpoints
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Process Stepper**: Visual indication of the user's progress through the booking process
+2. **Skip Cards**: Responsive, interactive cards that clearly display:
+   - Skip size
+   - Price details (including VAT)
+   - Hire period
+   - Placement restrictions (road/private property)
+   - Waste type restrictions
+3. **Responsive Layout**: Adapts to different screen sizes:
+   - Mobile: Single column layout
+   - Tablet: Two column layout
+   - Desktop: Three column layout
+4. **Visual Feedback**: Clear indication of selected items, interactive hover states
+5. **Navigation Controls**: Intuitive back/continue buttons with appropriate state management
 
-### `npm run eject`
+### Code Quality
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Component Structure**: Logically separated components for better maintainability
+- **TypeScript Interfaces**: Well-defined interfaces for props and data types
+- **Custom Theme**: Consistent design system with custom MUI theme configuration
+- **Responsive Utilities**: Media query hooks for responsive behavior
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup and Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Install dependencies:
+```
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Start the development server:
+```
+npm start
+```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technology Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React 18
+- TypeScript
+- Material-UI v5
+- React Router v6
+- Axios
+
+## License
+
+MIT
